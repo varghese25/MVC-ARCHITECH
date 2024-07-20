@@ -1,0 +1,14 @@
+@WebServlet("/multiply") // Annotation 
+public class MultiplicationServlet extends HttpServlet
+{
+
+public void service(HttpServletRequest req, HttpResponse res)
+
+{
+ // TypeCasting used int to Interger parseInt Servelet doesNot int 
+int months = Interger.parseInt(req.getParameter("n2"));
+
+int total=installment * months;
+PrintWrite out = res.getWriter(); // Out Put Print From HTTP Response
+out.println(total); //Browser it will print
+}
